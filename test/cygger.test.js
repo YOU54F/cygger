@@ -6,7 +6,7 @@ const parsedSwagger = require('./todoparsed.json')
 
 describe('Cygger CLI Application', () => {
   test('It should read a Swagger File', async () => {
-    const data = await load('../examples/todo.yml')
+    const data = await load('./examples/todo.yml')
     expect(data).toHaveProperty('swagger')
     expect(data).toHaveProperty('info')
     expect(data).toHaveProperty('definitions')
