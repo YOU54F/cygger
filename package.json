@@ -1,8 +1,14 @@
 {
-  "name": "cygger",
-  "version": "0.0.4",
+  "name": "cy-openapi",
+  "version": "0.0.5",
   "description": "Boilerplate generator for API Testing from Swagger to Cypress",
   "main": "index.js",
+  "bin":{
+    "cypress-swagger":"./bin/cli.js",
+    "cy-openapi":"./bin/cli.js",
+    "cypress-openapi":"./bin/cli.js",
+    "cygger":"./bin/cli.js"
+  },
   "scripts": {
     "test": "jest ./test/*",
     "test:watch": "jest --watch --verbose ./test/*",
@@ -20,9 +26,6 @@
   "homepage": "https://github.com/RamirezAlex/cygger",
   "bugs": {
     "url": "https://github.com/RamirezAlex/cygger/issues"
-  },
-  "bin": {
-    "cygger": "./bin/cli.js"
   },
   "standard": {
     "globals": [
